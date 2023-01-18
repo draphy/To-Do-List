@@ -1,0 +1,105 @@
+body {
+ background-image: url('https://media1.giphy.com/media/WWNObA6zP3wNZBYWlU/giphy.gif?cid=ecf05e47fl2adl8sd3lli5yh55pwyxod3qdh0ovnbg4ou34b&rid=giphy.gif&ct=g');
+ background-size : cover;
+  color: white;
+}
+
+.App {
+  text-align: center;
+}
+
+.taskBg {
+  background-color:  rgba(255, 255, 255, 0.247);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
+}
+
+.taskBg div {
+  display: flex;
+  align-items: center;
+}
+
+.taskNumber {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskBg .taskText {
+  flex: 1;
+ 
+}
+
+.taskBg .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.taskBg .text2Green{
+ 
+  color: #00ff89;
+
+}
+.taskBg .iconsWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+}
+
+.taskBg .iconsWrap span {
+  display: inline-block;
+  margin: 0px 10px 0 10px;
+  cursor: pointer;
+  color: #00ff89;
+}
+
+.taskBg .iconsWrap span:hover {
+  color: yellow;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+#toOverflow{
+  height: 15rem;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  margin-left: 2rem;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #00ff89; 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #00ff89; 
+}
